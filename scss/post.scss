@@ -1,0 +1,44 @@
+// Post SCSS for the theme.
+@import "mixins";
+@import "materia/bootswatch";
+
+html {
+  height: auto;
+  background: $body-bg;
+}
+
+body {
+  background: $body-bg;
+  font-size: 0.92rem;
+}
+
+.navbar-light {
+  background-color: $brand-corporate;
+  border-bottom: 1px solid $brand-darkest !important;
+
+  #user-menu-toggle {
+    background-color: $gray-100;
+	  border: 1px solid $brand-darkest;
+	  //padding: 3px 5px;
+	  border-radius: 2rem;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .dropdown-item .icon {
+    color: $dropdown-link-color !important;
+  }
+}
+
+.edit_on .btn {
+  @extend .btn-primary;
+}
+
+.edit_off .btn {
+  background: #e53935;
+  border-color: #c62828;
+  color: $white;
+}
