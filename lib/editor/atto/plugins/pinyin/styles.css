@@ -1,0 +1,10 @@
+.atto_pinyin_selector button {
+    width: 2em;
+    padding: 3px;
+    border: none;
+    margin: 1px;
+}
+
+.atto_pinyin_button .icon {
+	height: 16px;
+}

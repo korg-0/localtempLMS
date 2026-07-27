@@ -1,0 +1,5 @@
+{
+    "mma.mod_certificate.getcertificate": "Obtener su certificado",
+    "mma.mod_certificate.requiredtimenotmet": "Usted debe pasar al menos un mínimo de {{$a.requiredtime}} minutos en el curso antes de poder acceder a este certificado",
+    "mma.mod_certificate.summaryofattempts": "Resumen de certificados recibidos anteriormente"
+}

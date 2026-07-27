@@ -1,0 +1,36 @@
+{{=<% %>=}}
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-margin-bottom">
+    <ion-icon name="ribbon" style="font-size: 64px; color: var(--ion-color-primary);"></ion-icon>
+    <h2><% certificate.name %></h2>
+    <p><% certificate.intro | coreCleanTags %></p>
+  </div>
+
+  <ion-list-header>
+    <ion-label><h3><% 'plugin.mod_certificate.viewcertificate' | translate %></h3></ion-label>
+  </ion-list-header>
+
+  <%#has_issued%>
+    <%#issued%>
+      <ion-card>
+        <ion-item lines="none">
+          <ion-icon name="document-text" slot="start"></ion-icon>
+          <ion-label>
+            <h2>Code: <% code %></h2>
+            <p><% timecreated | coreToLocaleString %></p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    <%/issued%>
+  <%/has_issued%>
+
+  <%^has_issued%>
+    <ion-item lines="none" class="ion-text-center">
+      <ion-label>
+        <p><% 'plugin.mod_certificate.nocertificatesissued' | translate %></p>
+      </ion-label>
+    </ion-item>
+  <%/has_issued%>
+
+</ion-content>

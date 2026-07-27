@@ -1,0 +1,10 @@
+{
+  "name": "moodle-atto_pinyin-button",
+  "builds": {
+    "moodle-atto_pinyin-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+# recipe.yaml Configuration for tiny_fontcase
+plugin:
+  name: "Font case"
+  component: "tiny_fontcase"
+  type: "tiny"
+  path: "lib/editor/tiny/plugins/fontcase"
+  copyright: "2026 Developer <user@example.com>"
+  release: "1.0.0"
+  version: 2026070800
+  requires: 2024042200 # Targets Moodle 4.4+ (consistent with requirements)
+  maturity: "MATURITY_STABLE"
+
+features:
+  install: true
+  uninstall: true
+  settings: false
+  readme: true
+  license: true
+  upgrade: false
+  upgrade_library: false
+
+tiny_specific:
+  has_buttons: true
+  has_menu_items: true
+  options_to_pass: []
+
+metadata:
+  dependencies: []
+  lang_strings:
+    - ["pluginname", "Font case"]
+    - ["fontcase:desc", "Change the case of selected text"]
+  cli_scripts: false
+  message_providers: false
+  capabilities: false
+  observers: false
+  events: false
+  mobile_addons: false
+  phpunit_tests: false
