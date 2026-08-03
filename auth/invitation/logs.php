@@ -43,7 +43,6 @@ foreach ($records as $record) {
         $username = 'System';
     }
 
-    // Safely parse JSON or serialized 'other' payload
     $other = [];
     if (!empty($record->other)) {
         $decoded = json_decode($record->other, true);

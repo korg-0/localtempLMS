@@ -7,7 +7,7 @@ class invitation_sent extends \core\event\base {
 
     protected function init() {
         $this->data['objecttable'] = 'auth_invitation';
-        $this->data['crud'] = 'c'; // Create
+        $this->data['crud'] = 'c';
         $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 

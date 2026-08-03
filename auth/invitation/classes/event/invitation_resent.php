@@ -7,7 +7,7 @@ class invitation_resent extends \core\event\base {
 
     protected function init() {
         $this->data['objecttable'] = 'auth_invitation';
-        $this->data['crud'] = 'u'; // Update
+        $this->data['crud'] = 'u';
         $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 

@@ -7,7 +7,7 @@ class invitation_revoked extends \core\event\base {
 
     protected function init() {
         $this->data['objecttable'] = 'auth_invitation';
-        $this->data['crud'] = 'u'; // Update / Soft Delete
+        $this->data['crud'] = 'u';
         $this->data['edulevel'] = self::LEVEL_OTHER;
     }
 
